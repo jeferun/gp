@@ -4,7 +4,7 @@ import React from 'react';
 const LazyCatalog = React.lazy(() => import('modules/Catalog'));
 const LazyRentals = React.lazy(() => import('modules/Rentals'));
 
-// config routes
+// config routes link
 const routesLink =  [
   {
     path: '/catalog',
