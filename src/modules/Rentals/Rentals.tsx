@@ -1,19 +1,24 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
+import { RootState } from 'store';
 // bootstrap
-import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
+// components
+import Table from 'components/Table';
+// const
+import CONSTANTS from 'utils/constants';
 
 function Rentals() {
+  const { list } = useSelector((state: RootState) => state.history);
+
   return (
-    <Container fluid="md">
-      <Row>
-        <h1>Rentals</h1>
-        <Col xs={6}>
-          info
-        </Col>
+    <>
+      <h3>Rentals</h3>
+      <Row as='section'>
+        <h4>Rentals history</h4>
+        <Table titles={CONSTANTS.TABLE_TITLE} items={list} />
       </Row>
-    </Container>
+    </>
   );
 }
 

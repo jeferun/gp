@@ -1,0 +1,23 @@
+.link {
+  color: rgb(85, 85, 85);
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: aliceblue;
+  border-radius: 0 20px 20px 0;
+  margin: 2px 0px;
+  padding: 4px;
+  color: rgb(0, 0, 0);
+}
+
+.link.activeLink {
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+  background-color: aliceblue;
+  padding: 0 5px;
+  border-radius: 12px;
+}

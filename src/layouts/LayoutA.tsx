@@ -1,4 +1,6 @@
 import React from 'react';
+// bootstrap
+import Container from 'react-bootstrap/Container';
 // module
 import NavBar from 'components/NavBar';
 
@@ -10,9 +12,9 @@ function LayoutA({children}: IProps) {
   return (
     <div>
       <NavBar />
-      <div className='container'>
+      <Container fluid='md'>
         {children}
-      </div>
+      </Container>
     </div>
   );
 }

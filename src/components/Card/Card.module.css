@@ -1,0 +1,14 @@
+.card {
+  border-radius: 14px;
+  box-shadow: #e4e4e4 0px 3px 5px 2px;
+  margin: 4px;
+  width: 20.1rem;
+}
+
+.cardImg {
+  background-size: cover;
+  height: auto;
+  min-height: 18rem;
+  position: relative;
+  color: blueviolet;
+}

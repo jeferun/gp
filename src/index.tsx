@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom/client';
 import { Provider } from 'react-redux';
 import { persistStore } from 'redux-persist';
 import {PersistGate} from 'redux-persist/integration/react';
-import Router from './Routes';
+import Router from './routes';
 import reportWebVitals from './reportWebVitals';
 import store from './store';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './mocks/server';
+// styles
+import './styles/App.css';
 
 const persistor = persistStore(store);
 

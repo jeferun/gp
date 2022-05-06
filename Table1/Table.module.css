@@ -1,0 +1,20 @@
+.wrapper {
+  padding: 0.5rem;
+  margin: 0.8rem;
+  border: 1px red solid;
+}
+
+.header_wrapper {
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.row_wrapper {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.wrapper strong {
+  font-size: 1rem;
+}

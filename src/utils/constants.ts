@@ -1,8 +1,5 @@
 const CONSTANTS = {
-  productTypes: {
-    typeA: 'd',
-    typeB: 's',
-  }
+  TABLE_TITLE: ['Product', 'Type', 'Colors', 'days'],
 };
 
 export default CONSTANTS;

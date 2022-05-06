@@ -4,18 +4,21 @@ import { persistReducer, PERSIST } from 'redux-persist';
 import { combineReducers } from 'redux';
 // reducer
 import { productSlice } from './product';
+import { historySlice } from './history';
 
 const persistConfig = {
   key: 'root',
   version: 1,
   storage,
-  /*  whitelist: [''], // Array of reducers to persist  */
+  whitelist: ['history'], // Array of reducers to persist
 };
 
-const reducer = combineReducers({ // organizar
-  product: productSlice
+const reducer = combineReducers({
+  product: productSlice,
+  history: historySlice,
 });
 
+// addd localStorage
 const persistedReducer = persistReducer(persistConfig, reducer);
 
 const rootReducer = configureStore({
@@ -30,6 +33,5 @@ const rootReducer = configureStore({
 });
 
 export type RootState = ReturnType<typeof rootReducer.getState>
-
 
 export default rootReducer;
