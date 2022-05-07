@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 // bootstrap
 import Container from 'react-bootstrap/Container';
 // module
 import NavBar from 'components/NavBar';
 
 interface IProps {
-  children: JSX.Element
+  children: ReactNode
 }
 
-function LayoutA({children}: IProps) {
+function LayoutA({ children }: IProps) {
   return (
     <div>
       <NavBar />
