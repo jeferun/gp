@@ -48,6 +48,8 @@
       "error",
       "always"
     ],
+    "no-mixed-spaces-and-tabs": "off",
+    "indent": "off",
     "linebreak-style": [
       "error",
       "unix"
@@ -58,7 +60,8 @@
     ],
     //"no-console": "error",
     "no-debugger": "warn",
-    "eqeqeq": "error"
+    "eqeqeq": "error",
+    "no-undef": "off"
   },
   "settings": {
     "import/resolver": {
