@@ -1,4 +1,4 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 // bootstrap
 import Container from 'react-bootstrap/Container';
 // module

@@ -48,8 +48,8 @@
       "error",
       "always"
     ],
-    "no-mixed-spaces-and-tabs": "off",
-    "indent": "off",
+    "no-mixed-spaces-and-tabs": "warn",
+    "indent": "warn",
     "linebreak-style": [
       "error",
       "unix"
@@ -58,10 +58,12 @@
       "error",
       "single"
     ],
-    //"no-console": "error",
+    "no-console": "error",
     "no-debugger": "warn",
     "eqeqeq": "error",
-    "no-undef": "off"
+    "no-undef": "warn",
+    "curly": "error",
+    "react/react-in-jsx-scope": "off"
   },
   "settings": {
     "import/resolver": {

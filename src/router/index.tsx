@@ -1,9 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 // layouts
-import Layout from 'layouts';
+import Layout from 'layout';
 // routes
 import routesLink from './routes';
+
 
 const getRoutes = () => (
   routesLink.map((route, count) => {
